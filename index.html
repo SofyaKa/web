@@ -1,87 +1,129 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title> Афиша Перми </title>
-<link rel="stylesheet" href="style.css" type="text/css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Афиша Пермь</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
 
-</head>
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+	<style type="text/css">
+      
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<body>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
 
-<div class="main">
-	<div class= "header">
-<center><b>Афиша</b></center>
-<center>
+  <body>
+<nav class="navbar navbar-nav navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+     <div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+         
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	 <a class="navbar-brand" href="#">Афиша Пермь</a>
+	 </div>
+	 <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="MyNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Главная</a></li>
+        <li><a href="#about">Рестораны</a></li>
+        <li><a href="#contact">Бары</a></li>
+		<li><a href="#contact">Квесты</a></li>
+		<li><a href="#contact">Клубы</a></li>
+		<li><a href="#contact">Музеи</a></li>
+		<li><a href="#contact">Театры</a></li>
+		<li><a href="#contact">Интересные места</a></li>
+      </ul>
+  </div>
+</nav>
 
-<center><strong><big>Пермь</big></strong></center>
-
-</center>
-
+    <div class="container">
+	<form class="form-head">
+      <h1>Афиша Пермь</h1>
+      <p>Куда пойти в Перми:<br> киноафиша, расписание концертов, выставок, афиша театров.</p>
+	</form>
+    </div> <!-- /container -->
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+ <div class="row" >
+    <div class="col-md-4">
+	<form class="form-text">
+        <h2>Программа максимум: скандалы, интриги, расследования</h2>
+        <p></p>
+    </form>
 	</div>
-	<div class="menu">
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Рестораны</a>
-		</div>
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Бары</a>
-		</div>
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Квесты</a>
-		</div>
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Клубы</a>
-		</div>
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Музеи</a>
-		</div>
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Театры</a>
-		</div>
-		<div class="button_of_menu">
-		<a href="#" class="knopka">Интересные места</a>
-		</div>
-
- 	</div>
-	<div class="forma">
-
-			
-				 
-				  <form method="post" action="form.php">
-				    <div>
-				      <label for="name">Имя</label>
-				      <input type="text" name="name" required>
-				    </div>
-				    <div class="radio">
-				   
-				      <label>
-				  
-				    </div>
-				    <div>
-				      <label for="email">E-mail</label>
-				      <input type="email" name="email" required>
-				    </div>
-				    <div>
-				 
-				    
-				   
-				    </div> 
-				    <button type="submit">Регистрация</button> 
-				    <center><a href= "#" >Вход</a></center>
-
-				  </form> 
-				
+   
+	<div class="col-md-4">
+	 <form class="form-text">
+        <h2>Текст</h2>
+        <p>Просто текст</p>
+    </form>
 	</div>
- 	<div class="news">
-                      <p>Куда пойти в Перми: киноафиша, расписание концертов, выставок, афиша театров.</p>
- 	</div>
-	<div class="footer">
-подвал
- 	</div>
-
-
+	
+    <div class="col-md-4">
+        <p><form class="form-signin">
+        <h2 class="form-signin-heading">Пожалуйста, войдите</h2>
+        <input type="text" class="input-block-level" placeholder="Электронная почта">
+        <input type="password" class="input-block-level" placeholder="Пароль">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Запомнить меня
+        </label>
+        <button class="btn btn-large btn-primary" type="submit">Войти</button>
+      </form></p>
+    </div>
 </div>
-</body>
-
-
+    </div> <!-- /container -->
+	<script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+ <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+<script>
+    // Устанавливаем изображение, которое будет являться фоном веб-страницы 
+    $.backstretch("assets/img/back.jpg");
+</script>
+  </body>
 </html>

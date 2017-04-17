@@ -1,200 +1,56 @@
-.main
-{
+body {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-color: #f5f5f5;
+      }
 
-width: 100%;
-height:650px;
-background: #ffffff url(images/back.jpg) no-repeat; 
-background-size: 100% auto;
-
-}
-.header
-{
-width: 100%;
-height:120px;
-background: rgb(255,255,255);
-background: #ffffff url(images/header.jpg) no-repeat; 
-font: 34pt courier;  
-
-}
-.forma
-{
-width: 20%;
-float:left;
-height: 70%;
-
-}
-.news
-{
-width: 80%;
-float:right;
-height: 70%;
-background: rgba(255, 255, 255, 0.5)
-}
-
-.menu
-{
-width: 100%;
-height: 20px;
-clear:both;
-background: rgb(139,0,139);
-}
-.button_of_menu
-{
-	height: 40px;
-	width: 100% auto;
-	float:left;
-}
-a.knopka {
-  color: #fff; /* цвет текста */
-  text-decoration: none; /* убирать подчёркивание у ссылок */
-  user-select: none; /* убирать выделение текста */
-  background: rgb(139,0,139); /* фон кнопки */
-  padding: 10px 65px; /* отступ от текста */
-  outline: none; /* убирать контур в Mozilla */
-} 
-a.knopka:hover { background: rgb(209,95,238); } /* при наведении курсора мышки */
-a.knopka:active { background: rgb(139,0,139); } /* при нажатии */
-
-
-.form-wrap {
-  width: 300px;
-  background: #ffd500;
-  border-radius: 20px;
-
-}
-
-form {
-  background: white;
-  float: left;
-  width: calc(220);
-  padding: 30px;
-  border-radius: 0 20px 20px 0;
-  color: #7b7b7b; 
-}
-.form-wrap:after, form div:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-form div {
-  margin-bottom: 15px;
-  position: relative;
-}
-h1 {
-  font-size: 24px;
-  font-weight: 400;
-  position: relative;
-  margin-top: 20px;
-}
-h1:after {
-  content: "\f138";
-  font-size: 40px;
-  font-family: FontAwesome;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
- 
-/********************** стилизация элементов формы **********************/
-label, span {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-input[type="text"], input[type="email"] {
-  border-width: 0;
-  outline: none;
-  margin: 0;
-
-  padding: 10px 15px;
-  background: #e6e6e6;
-}
-input[type="text"]:focus, input[type="email"]:focus {
-  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
-}
-.radio label {
-  position: relative;
-  padding-left: 50px;
-  cursor: pointer;
-  width: 50%;
-  float: left;
-  line-height: 40px;
-}
-.radio input {
-  position: absolute;  
-  opacity: 0;
-}
-.radio-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 40px;
-  background: #e6e6e6;
-  border-radius: 50%;
-  text-align: center;
-}
-.male:before {
-  content: "\f222";
-  font-family: FontAwesome;
-  font-weight: bold;
-}
-.female:before {
-  content: "\f221";
-  font-family: FontAwesome;
-  font-weight: bold;
-}
-.radio label:hover input ~ .radio-control,
-.radiol input:focus ~ .radio-control {
-  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
-}
-.radio input:checked ~ .radio-control {
-  color: red;
-}
-select {
-  width: 100%;
-  cursor: pointer;
-  padding: 10px 15px;
-  outline: 0;
-  border: 0;
-  background: #e6e6e6;
-  color: #7b7b7b;
-}
-
-.select-arrow {
-  position: absolute;
-  top: 38px;
-  right: 15px;
-  width: 0;
-  height: 0;
-  pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
-  border-style: solid;
-  border-width: 8px 5px 0 5px;
-  border-color: #7b7b7b transparent transparent transparent;
-}
-button {
-  padding: 10px 0;
-  border-width: 0;
-  display: block;
-  width: 120px;
-  margin: 25px auto 0;
-  background: rgb(139,0,139);
-  color: white;
-  font-size: 14px;
-  outline: none;
-  text-transform: uppercase;
-}
- 
-/********************** добавляем форме адаптивность **********************/
-@media (max-width: 600px) {
-  .form-wrap {margin: 20px auto; max-width: 550px; width:100%;}
-  .profile, form {float: none; width: 100%;}
-  h1 {margin-top: auto; padding-bottom: 50px;}
-  form {border-radius: 0 0 20px 20px;}
-}
-td {
- 
-  padding-left: 20px;
-  vertical-align: top;
-}
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+	.form-head {
+        max-width: 900px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+		}
+	.form-text {
+        max-width: 350px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			}
